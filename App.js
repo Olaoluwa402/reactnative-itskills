@@ -1,14 +1,21 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
-
+import React,{useState} from 'react';
+import { View, StyleSheet } from 'react-native';
+import ParentComponent from './components/StateProp/ParentComponent';
+import LearnStyleSheet from './components/StyleSheet/StyleSheet';
+import FlexBox from './components/FlexBox/FlexBox';
+import List from './components/ListView/List';
 export default function App() {
+  
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
+      {/* <ParentComponent />
+      <LearnStyleSheet /> */}
+      {/* <FlexBox /> */}
+      <List />
     </View>
   );
 }
+
 
 const styles = StyleSheet.create({
   container: {
