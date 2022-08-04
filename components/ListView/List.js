@@ -2,14 +2,20 @@ import { StyleSheet, Text, View, TouchableOpacity } from 'react-native'
 import React, {useState} from 'react'
 
 const List = () => {
-    const init = [{id:0,name:'John'},{id:1,name:'Peter'},{id:2,name:'Daniel'},{id:3,name:'Ben'},{id:4,name:'Godwin'},]
+    const init = [
+      {id:0,name:'John'},
+      {id:1,name:'Peter'}, 
+      {id:2,name:'Daniel'},
+      {id:3,name:'Ben'},
+      {id:4,name:'Godwin'},
+    ]
    const [state,setState] = useState(init)
 
    const alertName = (name) => {
       alert(name)
    }
     return (
-    <View >
+    <View style={{width:'75%'}}> 
       {
         state.map((item)=> (
         <TouchableOpacity 
@@ -28,10 +34,10 @@ export default List
 
 const styles = StyleSheet.create({
     container:{
-      width:'100%',
+        width:'100%',
         padding:10,
         marginTop:20,
-        backgroundColor:'green'
+        backgroundColor:'red'
     },
     text:{
         color:'#fff'
