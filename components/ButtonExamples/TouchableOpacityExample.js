@@ -3,9 +3,11 @@ import React from 'react'
  
 const TouchableOpacityExample = () => {
   return (
-    <TouchableHighlight style={styles.container} underlayColor='#000'>
-      <Text style={styles.text}>Click me</Text>
-    </TouchableHighlight>
+    <View style={styles.container}>
+        <TouchableHighlight  underlayColor='green'>
+        <Text style={styles.text}>Click me</Text>
+      </TouchableHighlight>
+    </View>
   )
 }
 
@@ -14,13 +16,13 @@ export default TouchableOpacityExample
 const styles = StyleSheet.create({
         container:{
             marginTop:20,
-            backgroundColor:'#200',
             paddingHorizontal:20,
             paddingVertical:10,
             borderRadius:10,
 
         },
         text:{
-            color:'#fff'
+            color:'#fff',
+            backgroundColor:'#200',
         }
 })

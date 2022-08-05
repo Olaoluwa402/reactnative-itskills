@@ -1,5 +1,5 @@
 import React,{useState} from 'react';
-import { View, StyleSheet } from 'react-native';
+import { View, StyleSheet, SafeAreaView, ImageBackground} from 'react-native';
 import ParentComponent from './components/StateProp/ParentComponent';
 import LearnStyleSheet from './components/StyleSheet/StyleSheet';
 import FlexBox from './components/FlexBox/FlexBox';
@@ -9,19 +9,27 @@ import ScrollViewExample from './components/ScrollView/ScrollViewExample';
 import ImageExample from './components/ImageExample/ImageExample';
 import ButtonExample from './components/ButtonExamples/ButtonExample';
 import TouchableOpacityExample from './components/ButtonExamples/TouchableOpacityExample';
+import FetchExample from './components/HTTP/FetchExample';
+import Animations from './components/Animation/AnimatedExample';
+import AxiosFlatlist from './components/HTTP/AxiosFlatList';
+import bg from './assets/images/tarding.png'
 
 export default function App() {
   
   return (
-    <View style={styles.container}>
+    <SafeAreaView style={styles.container} >
+      <ImageBackground source={bg} resizeMode='cover'>
       {/* <ParentComponent />
       <LearnStyleSheet /> */}
       {/* <FlexBox /> */}
       {/* <InputText /> */}
-      <ImageExample  />
+      {/* <ImageExample  />
       <ButtonExample />
-     <TouchableOpacityExample />
-    </View>
+     <TouchableOpacityExample /> */}
+     {/* <FetchExample /> */}
+     <AxiosFlatlist />
+     </ImageBackground>
+    </SafeAreaView>
   );
 }
 
