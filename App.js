@@ -10,26 +10,31 @@ import ImageExample from './components/ImageExample/ImageExample';
 import ButtonExample from './components/ButtonExamples/ButtonExample';
 import TouchableOpacityExample from './components/ButtonExamples/TouchableOpacityExample';
 import FetchExample from './components/HTTP/FetchExample';
-import Animations from './components/Animation/AnimatedExample';
+import ActivityIndicatorExaple from './components/ActivityIndicatorExample/ActivityIndicatorExaple';
 import AxiosFlatlist from './components/HTTP/AxiosFlatList';
-import bg from './assets/images/tarding.png'
+import ModalExample from './components/Modal/ModalExample';
+import KeyboardAvoidingExample from './components/KeyboardAvoidingExample/KeyboardAvoidingExample';
+
 
 export default function App() {
   
   return (
     <SafeAreaView style={styles.container} >
-      <ImageBackground source={bg} resizeMode='cover'>
+      {/* <ImageBackground source={bg} resizeMode='cover'> */}
       {/* <ParentComponent />
       <LearnStyleSheet /> */}
       {/* <FlexBox /> */}
-      {/* <InputText /> */}
+      {/* <InputText /> */} 
       {/* <ImageExample  />
       <ButtonExample />
      <TouchableOpacityExample /> */}
      {/* <FetchExample /> */}
-     <AxiosFlatlist />
-     </ImageBackground>
+     {/* <AxiosFlatlist /> */}
+     {/* < ActivityIndicatorExaple /> */}
+     {/* <ModalExample /> */}
+     <KeyboardAvoidingExample />
     </SafeAreaView>
+  
   );
 }
 
