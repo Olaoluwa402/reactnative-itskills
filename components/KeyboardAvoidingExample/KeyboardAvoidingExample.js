@@ -18,7 +18,7 @@ const KeyboardAvoidingExample = () => {
     >
       <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
         <View>
-            <Text>Header Text</Text>
+            <Text>Header Text</Text> 
             <TextInput placeholder='Enter text'/>
             <Button onPress={()=> null} title='submit' color='red'/>
         </View>
